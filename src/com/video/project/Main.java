@@ -12,19 +12,10 @@ public class Main {
 		coet1.getInfo();
 		coet2.getInfo();
 		
-		// Accelerem els propulsors del coet2 en diferents threads
-		Accio thread0 = new Accio(coet2, 3, "accelerar");
-		thread0.start();
-		Accio thread1 = new Accio(coet2, 2, "accelerar");
-		thread1.start();		
-		Accio thread2 = new Accio(coet2, 1, "accelerar");
-		thread2.start();		
-		Accio thread3 = new Accio(coet2, 4, "accelerar");
-		thread3.start();		
-		Accio thread4 = new Accio(coet2, 0, "accelerar");
-		thread4.start();		
-		Accio thread5 = new Accio(coet2, 5, "accelerar");
-		thread5.start();
+		coet1.augmentarVelocitat(12, 1120);
+		coet2.augmentarVelocitat(12, 1120);
+		
+
 	}
 
 }
